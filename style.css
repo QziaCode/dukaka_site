@@ -253,7 +253,7 @@ header nav ul li a:hover {
 .Produtos h2 {
     position: absolute;
     font-size: 2em;
-    color: #4b0082;
+    color: #2c024b;
     margin-bottom: 20px;
     text-align: center;
     left: 800px;
@@ -270,7 +270,7 @@ header nav ul li a:hover {
 .Produtos ul li {
     font-size: 1.1em;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #530263;
     position: relative;
 }
 
