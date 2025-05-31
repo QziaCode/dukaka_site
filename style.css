@@ -245,47 +245,29 @@ header nav ul li a:hover {
     padding: 20px 0;
 }
 
-/* Produtos Sessão */
-.Produtos {
-    padding: 40px 0;
-}
-
-.Produtos h2 {
-    position: absolute;
-    font-size: 2em;
-    color: #4b0082;
-    margin-bottom: 20px;
+/*Estilização dos cards*/
+.card {
+    background: #510364;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 20px;
     text-align: center;
-    left: 800px;
-    top: 2250px;
+    transition: transform 0.3s ease-in-out;
 }
-
-.Produtos ul {
-    list-style: none;
-    margin-bottom: 30px;
-    padding-left: 20px;
-    text-align: center;
+.card:hover{
+    transform: scale(1.05);
+    color: #a65ac9;
+    background-color: #40084e;
 }
-
-.Produtos ul li {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    color: #ffffff;
-    position: relative;
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
 }
-
-.Produtos-images {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.Produtos-images img {
-    max-width: 70%;
-    /* Ajustar tamanho das imagens */
-    height: auto;
-    border-radius: 9px;
+.card h2{
+    margin: 10px 0;
 }
 
 /*Estilização do Footer*/
