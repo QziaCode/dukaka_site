@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="estilo-produto.css" rel="stylesheet">
+
+    <title> Dukaká </title>
+</head>
+<body>
+    <main>
+        <div class="pop">
+            <h1 id="nome-produto"></h1>
+            <div class="slider">
+                <button id="prevBtn">&#10094;</button>
+                <img id="slider-img" src="" alt="">
+                <button id="nextBtn">&#10095;</button>
+            </div>
+            <!-- <img id="imagem-produto" src="img/produto1.png" alt=""> -->
+            <p id="descricao-produto"></p>
+
+            <!-- Preenchimento das informações -->
+             <script>
+                // Função para capturar os parâmetros
+                function getParametros(info){
+                    const urlParametros = new URLSearchParams(window.location.search);
+                    return urlParametros.get(info);
+                }
+                // Preenche as informações na POP
+                document.getElementById("nome-produto").textContent = getParametros("nome");
+                // document.getElementById("imagem-produto").src = getParametros("imagemProd");
+                document.getElementById("descricao-produto").textContent = getParametros("descricao");
+
+                /*Controle do Slider*/
+                const imagens=getParametros("imagem") ? getParametros("imagem").split(',') : [];
+                let index=0;
+                const sliderImg=document.getElementById("slider-img");
+
+                function MostrarImagem(){
+                    if(imagens.length > 0){
+                        sliderImg.src=imagens[index];
+                    }
+                }
+
+                document.getElementById("prevBtn").onclick = function() {
+                    index = (index-1 + imagens.length) % imagens.length;
+                    MostrarImagem();
+                }
+
+                document.getElementById("nextBtn").onclick = function() {
+                    index = (index+1) % imagens.length;
+                    MostrarImagem();
+                }
+
+                //Exibe a primeira imagem
+                MostrarImagem();
+             </script>
+        </div>
+    </main>
+</body>
+</html>

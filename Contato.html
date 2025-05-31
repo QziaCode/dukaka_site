@@ -1,0 +1,97 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Contatos.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="icon" href="images/logoMenor.png" type="image/png">
+
+        <title> Contate-nos! </title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo-header">
+                    <object data="images/logoMenor.png" type="image/svg+xml">DUKAKA</object>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="Contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!--Título-->
+            <ul class="contato-titulo">
+                <li class="contato-item">Entre em Contato!</li>
+            </ul>
+            <p class="texto-contato">
+                Será uma alegria te atender! <br>
+            <br>Você pode nos encontrar no Instagram, no WhatsApp ou preencher o formulário abaixo.
+            </p>
+            <!-- Formulário de contato -->
+            <form id="frmContato" action="">
+                <fieldset>  <!-- delimitador do formulário -->
+                    <legend>Dados Pessoais</legend>
+                    <label for="name">
+                        <span>Nome Completo</span>
+                        <input type="text" id="name" class="input-padrao" placeholder="Digite seu nome aqui..." required>
+                    </label>
+
+                    <label>
+                        <span>E-mail:</span>
+                        <input type="text" id="email" class="input-padrao" placeholder="Digite seu email aqui...">
+                    </label>
+        
+                    <label>
+                        <span>Telefone:</span>
+                        <input type="text" id="telefone" class="input-padrao" placeholder="Exemplo. (11) 40028922">
+                    </label>
+                    
+                    <label>
+                        <span>Mensagem</span>
+                        <textarea cols="70" rows="10" class="input-padrao"></textarea>
+                    </label>
+
+                    <label>
+                        <span>Como prefere o nosso contato?</span>
+                        <input type="radio"value="radio-email" name="contato"> E-mail
+                        <input type="radio" value="radio-telefone"name="contato"> Telefone
+                        <input type="radio" value="radio-whatsapp"name="contato"> WhatsApp
+                    </label>
+
+                    <label>
+                        <span>Qual o motivo do seu contato?</span>
+                        <select>
+                            <option>Selecione</option>
+                            <option>Dúvida</option>
+                            <option>Sugestão</option>
+                            <option>Elogio</option>
+                            <option>Reclamação</option>
+                        </select>
+                    </label>
+        
+                </fieldset>
+                <label>
+                    <input type="checkbox" class="chk">Gostaria de receber nossas novidades e promoções?
+                </label>
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+        </main>
+        <footer>
+            <img src="images/logoMenor.png" title="Picolés & Açaí Dukaká" class="logo_footer" />
+            <p>Compre com a gente:
+                <a href="https://wa.me/5511953362937"><i class="fa fa-whatsapp"></i></a>
+                (11) 95336-2937 | <a href="https://instagram.com/picolesdukaka">
+                    <i class="fa fa-instagram"></i></a> @picolesdukaka
+                    <a href="https://www.facebook.com/sorvetes.com.br">
+                        <i class="fa fa-facebook"></i></a>DUKAKÁ Picolés & Açaí</p>
+            </p>
+        </footer>
+    </body>
+</html>
