@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #dfaae9, #8430bd, #cca4eb);
+    ;
+    color: #cfa6cf;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1800px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+}
+
+header .container {
+    background-color: #e1a0f100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.logo-header span {
+    margin-right: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 10px;
+    margin-top: -32px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #580c6b;
+    background-color: #ca91d8;
+    padding: 10px 20px;
+    border: 1px solid #4c008200;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #4c1d55;
+    color: #f0ecf3;
+}
+/*Título*/
+.produtos-titulo{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(78,8,116);
+    list-style: none;
+    font-family: cursive;
+}
+.produtos-item:before{
+    content: "🍧";
+}
+/*Texto dos Produtos*/
+.texto-produtos{
+    color: #e8d9eb;
+    font-size: 27px;
+    padding-left: 3%;
+}
+
+/*Container dos cards*/
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+/*Estilização dos cards*/
+.card {
+    background: #510364;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.05);
+    color: #a65ac9;
+    background-color: #40084e;
+}
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card h2{
+    margin: 10px 0;
+}
+.preco{
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60;
+    margin: 10px 0;
+}
+/* POP */
+.pop{
+    margin: 0;
+}
+.pop img{
+    width: 700;
+    height: 500;
+}
+.pop h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #310458;
+}
+.pop p{
+    font-size: 25px;
+    color: #f3e0f3;
+    padding: 2% 0 9% 7%;
+    margin: 0;
+    white-space: pre-line;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.slider button{
+    background-color: #440e70;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+}
+.slider-img{
+    width: 700;
+    height: 500;
+}
+
+/*Estilização do Footer*/
+footer{
+    background: url("../img/fundo_rodape.png");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    padding: 30px 10px 10px 0;
+}
+footer p{
+    color: rgb(147, 69, 199);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+}
+footer i{
+    color: rgb(70, 6, 112);
+}
+.logo_footer{
+  margin-right: auto;
+}
