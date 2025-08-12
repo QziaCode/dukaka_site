@@ -40,6 +40,7 @@ header .container {
 header nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -252,7 +253,7 @@ header nav ul li a:hover {
 .Produtos h2 {
     position: absolute;
     font-size: 2em;
-    color: #4b0082;
+    color: #2c024b;
     margin-bottom: 20px;
     text-align: center;
     left: 800px;
@@ -269,7 +270,7 @@ header nav ul li a:hover {
 .Produtos ul li {
     font-size: 1.1em;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #530263;
     position: relative;
 }
 
@@ -282,7 +283,6 @@ header nav ul li a:hover {
 
 .Produtos-images img {
     max-width: 70%;
-    /* Ajustar tamanho das imagens */
     height: auto;
     border-radius: 9px;
 }

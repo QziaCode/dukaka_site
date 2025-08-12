@@ -19,11 +19,12 @@ body {
     padding: 20px;
 }
 
-.logo{
+.logo {
     width: 100px;
     height: 100px;
 
 }
+
 /* Header */
 header {
     padding: 20px 0;
@@ -42,6 +43,35 @@ header .container {
     margin-right: auto;
 }
 
+/* Tabela de Encomendas */
+table {
+    width: 100%;
+    margin-bottom: 2%;
+    table-layout: fixed;
+}
+
+td,
+th {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    border: 1px solid #1c022b;
+    text-align: center;
+}
+
+th {
+    background-color: #410569;
+    color: #d6a7f1;
+    font-weight: bold;
+}
+
+td {
+    background-color: #c48fec;
+    color: #340357;
+    font-weight:normal
+}
+
+/* Navegação do Header */
 header nav ul {
     list-style: none;
     display: flex;
@@ -67,8 +97,9 @@ header nav ul li a:hover {
     background-color: #deb5e6;
     color: #320e4e;
 }
+
 /*Título*/
-.contato-titulo{
+.contato-titulo {
     position: absolute;
     bottom: 730px;
     left: 310px;
@@ -77,103 +108,120 @@ header nav ul li a:hover {
     color: #380468;
     list-style: none;
 }
-.contato-item:before{
+
+.contato-item:before {
     content: "💌";
-}.texto-contato{
+}
+
+.texto-contato {
     font-weight: bold;
     color: #e6dfeb;
     font-size: 20px;
     padding-left: 20%;
     padding-top: 2%;
 }
+
 /* ______________________________________________________________________________ */
 /* Estilização formulário */
-main form label span{
+main form label span {
     font-size: 1.2rem;
     margin-top: 0.5rem;
     color: #ebe1ec;
 }
 
-main form input{
+main form input {
     border: 1px solid #4b0574;
     border-radius: 5px;
 }
-form{
-	margin-top: 20px;
-	margin-left: 20%;
+
+form {
+    margin-top: 20px;
+    margin-left: 20%;
     margin-bottom: 0;
 }
-form label select{
+
+form label select {
     border: 1px solid #480580;
 }
-form label, form legend{
+
+form label,
+form legend {
     color: #e9d1e9;
-	display: block;
-	font-size: 20px;
-	margin: 0 0 10px;
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
 }
-fieldset{
+
+fieldset {
     color: rgb(69, 7, 105);
     background-color: #8549a8;
     border: 2px solid #520770;
-	width: 75%;
-	padding-left: 5%;
-	margin-bottom: 2%;
+    width: 75%;
+    padding-left: 5%;
+    margin-bottom: 2%;
 }
-.input-padrao{
+
+.input-padrao {
     border: 2px solid #3f0d4d;
-	display: block;
-	margin: 0 0 20px;
-	padding: 10px 25px;
-	width: 85%;
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 85%;
 }
-.chk{
+
+.chk {
     border: 2px solid #d1afe7;
-	margin: 20px 10px;
+    margin: 20px 10px;
 }
-.enviar{
-	width: 40%;
-	padding: 15px 0;
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
     margin-bottom: 20px;
-	background: rgb(102, 4, 148);
-	color: white;
-	font-weight: bold;
-	border: none;
-	border-radius: 5px;
-	transition: 1s all;
-	cursor: pointer;
+    background: rgb(102, 4, 148);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
 }
-.enviar:hover{
-	background: rgb(50, 2, 88);
-	transform: scale(1.2);
+
+.enviar:hover {
+    background: rgb(50, 2, 88);
+    transform: scale(1.2);
 }
 
 /*Div do retorno do formulário*/
-.divRetorno{
+.divRetorno {
     display: none;
     margin-bottom: 15px;
 }
-.divRetorno p{
+
+.divRetorno p {
     font-size: 24px;
 }
 
 /*Estilização do Footer*/
-footer{
+footer {
     background: url("../img/fundo_rodape.png");
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
     padding: 30px 10px 10px 0;
 }
-footer p{
+
+footer p {
     color: rgb(147, 69, 199);
     font-weight: bold;
     font-size: 20px;
     text-align: right;
 }
-footer i{
+
+footer i {
     color: rgb(70, 6, 112);
 }
-.logo_footer{
-  margin-right: auto;
+
+.logo_footer {
+    margin-right: auto;
 }
