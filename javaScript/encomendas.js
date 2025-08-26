@@ -15,21 +15,22 @@ for (var count = 0; count < clientes.length; count++) {
     if (tab_qtde < 1 || isNaN(tab_qtde)) {    //Verifica se a quantidade é válida
 
         //A quantidade eh menor que 1 ou nao eh numerica
-        clientes[count].querySelector(".qtde").textContent = "Valor inválido!";
+        clientes[count].querySelector(".qtde").textContent = "Quantidade inválida!";
+        clientes[count].classList.add("info-invalida")
 
         //linha td fica vermelha:
         //clientes[count].style.backgroundColor = "red";
-
         //texto da quantidade em vermelho
-        clientes[count].querySelector(".qtde").style.color = "red";
+        //clientes[count].querySelector(".qtde").style.color = "red";
 
     } else if (tab_unitario < 1 || isNaN(tab_unitario)) {   //validando o valor unit.
 
         //o valor unitario eh menor que 1 ou nao eh numerico
         clientes[count].querySelector(".unitario").textContent = "Valor inválido!";
-
+        clientes[count].classList.add("valor-invalida")
+        
         //texto da quantidade em vermelho
-        clientes[count].querySelector(".unitario").style.color = "red";
+        //clientes[count].querySelector(".unitario").style.color = "red";
 
     } else {
         //calcula e exibe o total (chamando a function "calculaTotal")
