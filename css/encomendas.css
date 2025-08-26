@@ -43,6 +43,20 @@ header .container {
     margin-right: auto;
 }
 
+/*Título*/
+.encomendas-titulo{
+    position: left;
+    bottom: 100px;
+    left: 400px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #380468;
+    list-style: none;
+}
+.encomendas-item:before{
+    content: "💌";
+}
+
 /* Tabela de Encomendas */
 table {
     width: 100%;
@@ -66,7 +80,7 @@ th {
 }
 
 td {
-    background-color: #c48fec;
+    background-color: #bd8ee467;
     color: #340357;
     font-weight:normal
 }
@@ -174,7 +188,7 @@ fieldset {
     margin: 20px 10px;
 }
 
-.enviar {
+.adiciona-encomenda {
     width: 40%;
     padding: 15px 0;
     margin-bottom: 20px;
@@ -187,7 +201,7 @@ fieldset {
     cursor: pointer;
 }
 
-.enviar:hover {
+.adiciona-encomenda:hover {
     background: rgb(50, 2, 88);
     transform: scale(1.2);
 }
@@ -224,4 +238,14 @@ footer i {
 
 .logo_footer {
     margin-right: auto;
+}
+
+/*Destaque de informação invalida*/
+.info-invalida {
+    background-color: red;
+    color: white;
+}
+/*Destaque de informação invalida*/
+.valor-invalida {
+    color: rgb(209, 17, 17);
 }
