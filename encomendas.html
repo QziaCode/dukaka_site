@@ -26,7 +26,10 @@
             </nav>
         </div>
     </header>
-    <ul class="encomendas-item">Encomendas</ul>
+    <!--Título-->
+    <ul class="encomendas-titulo">
+        <li class="encomendas-item"></li>
+    </ul>
     <!--Conteúdo do site-->
     <section class="Container">
         <!--tabela das Encomendas-->
@@ -47,14 +50,14 @@
                     <td class="produto">Picolé</td>
                     <td class="sabor">Morango</td>
                     <td class="qtde">45</td>
-                    <td class="unitario">4.50</td>
+                    <td class="unitario">0</td>
                     <td class="total"></td>
                 </tr>
                 <tr class="cliente">
                     <td class="nome">João</td>
                     <td class="produto">Picolé</td>
                     <td class="sabor">Limão</td>
-                    <td class="qtde">49</td>
+                    <td class="qtde">0</td>
                     <td class="unitario">2</td>
                     <td class="total"></td>
                 </tr>
@@ -77,7 +80,52 @@
             </tbody>
         </table>
     </section>
+    <main>
+        <!--Título-->
+        <ul class="contato-titulo">
+            <li class="contato-item">Encomendas</li>
+        </ul>
+        <p class="texto-contato">
+            Adicionar nova encomenda <br>
+        </p>
+        <!-- Formulário de encomendas -->
+        <form id="frmEncomenda" action="">
+            <fieldset> <!-- delimitador do formulário -->
+                <legend>Dados da encomenda</legend>
+                <label for="name">
+                    <span>Nome:</span>
+                    <input type="text" id="name" class="input-padrao" placeholder="Digite o nome aqui..." required>
+                </label>
 
+                <label>
+                    <span>Produto:</span>
+                    <select>
+                        <option>Picolé (Caixa 21 un.)</option>
+                        <option>Picolé Skimo</option>
+                        <option>ituzinho</option>
+                        <option>Sorvete de Massa Pote</option>
+                        <option>Açaí/Cupuaçu</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span>Sabores:</span>
+                    <input type="text" id="email" class="input-padrao" placeholder="Digite a quantidade aqui...">
+                </label>
+
+
+                <span>Quantidade:</span>
+                <input type="text" id="email" class="input-padrao" placeholder="Digite a quantidade aqui...">
+                </label>
+
+                <label>
+                    <span>R$ Unitário:</span>
+                    <textarea cols="70" rows="10" class="input-padrao"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Adicionar" class="adiciona-encomenda">
+        </form>
+    </main>
     <!--Rodapé-->
     <footer>
         <img src="images/logoMenor.png" title="Picolés & Açaí Dukaká" class="logo_footer" />
@@ -90,8 +138,8 @@
         </p>
         </p>
     </footer>
-
     <script src="javaScript/encomendas.js"></script>
+    <script src="javaScript/adiciona_encomenda.js"></script>
 </body>
 
 </html>
