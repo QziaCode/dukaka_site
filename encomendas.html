@@ -47,7 +47,7 @@
             <tbody id="tabela-clientes">
                 <tr class="cliente">
                     <td class="nome">Coraline</td>
-                    <td class="produto">Picolé</td>
+                    <td class="produto">Picolé (Cx 21 un.)</td>
                     <td class="sabor">Morango</td>
                     <td class="qtde">45</td>
                     <td class="unitario">0</td>
@@ -55,7 +55,7 @@
                 </tr>
                 <tr class="cliente">
                     <td class="nome">João</td>
-                    <td class="produto">Picolé</td>
+                    <td class="produto">Picolé (Cx 21 un.)</td>
                     <td class="sabor">Limão</td>
                     <td class="qtde">0</td>
                     <td class="unitario">2</td>
@@ -63,7 +63,7 @@
                 </tr>
                 <tr class="cliente">
                     <td class="nome">Maria</td>
-                    <td class="produto">Picolé</td>
+                    <td class="produto">Picolé (Cx 21 un.)</td>
                     <td class="sabor">Sortidos</td>
                     <td class="qtde">30</td>
                     <td class="unitario">1</td>
@@ -71,10 +71,10 @@
                 </tr>
                 <tr class="cliente">
                     <td class="nome">Pedro</td>
-                    <td class="produto">Picolé</td>
+                    <td class="produto">Ituzinho (Cx 12 un.)</td>
                     <td class="sabor">Chocolate</td>
-                    <td class="qtde">20</td>
-                    <td class="unitario">2</td>
+                    <td class="qtde">1</td>
+                    <td class="unitario">25</td>
                     <td class="total"></td>
                 </tr>
             </tbody>
@@ -83,13 +83,13 @@
     <main>
         <!--Título-->
         <ul class="contato-titulo">
-            <li class="contato-item">Encomendas</li>
+            <li class="contato-item"></li>
         </ul>
         <p class="texto-contato">
             Adicionar nova encomenda <br>
         </p>
         <!-- Formulário de encomendas -->
-        <form id="frmEncomenda" action="">
+        <form id="frmEncomenda" action="adicionaEncomenda">
             <fieldset> <!-- delimitador do formulário -->
                 <legend>Dados da encomenda</legend>
                 <label for="name">
@@ -99,7 +99,7 @@
 
                 <label>
                     <span>Produto:</span>
-                    <select>
+                    <select id="produto">
                         <option>Picolé (Caixa 21 un.)</option>
                         <option>Picolé Skimo</option>
                         <option>ituzinho</option>
@@ -110,20 +110,20 @@
 
                 <label>
                     <span>Sabores:</span>
-                    <input type="text" id="email" class="input-padrao" placeholder="Digite a quantidade aqui...">
+                    <input type="text" id="sabor" class="input-padrao" placeholder="Digite os sabores aqui...">
                 </label>
 
-
-                <span>Quantidade:</span>
-                <input type="text" id="email" class="input-padrao" placeholder="Digite a quantidade aqui...">
+                <label>
+                    <span>Quantidade:</span>
+                    <input type="text" id="quantidade" class="input-padrao" placeholder="Digite a quantidade aqui...">
                 </label>
 
                 <label>
                     <span>R$ Unitário:</span>
-                    <textarea cols="70" rows="10" class="input-padrao"></textarea>
+                    <input type="text" id="preco" class="input-padrao" placeholder="Digite o valor aqui...">
                 </label>
             </fieldset>
-            <input type="submit" value="Adicionar" class="adiciona-encomenda">
+            <button id="botaoAdicionar" class="bto-principal">Adicionar Encomenda</button>
         </form>
     </main>
     <!--Rodapé-->
