@@ -74,14 +74,14 @@ th {
 }
 
 th {
-    background-color: #410569;
+    background-color: #410569f8;
     color: #d6a7f1;
     font-weight: bold;
 }
 
 td {
-    background-color: #bd8ee467;
-    color: #340357;
+    background-color: #bd8ee490;
+    color: #340357f1;
     font-weight:normal
 }
 
@@ -185,10 +185,10 @@ fieldset {
 
 .chk {
     border: 2px solid #d1afe7;
-    margin: 20px 10px;
+    margin: 10px 10px;
 }
 
-.adiciona-encomenda {
+.bto-principal{
     width: 40%;
     padding: 15px 0;
     margin-bottom: 20px;
@@ -201,7 +201,7 @@ fieldset {
     cursor: pointer;
 }
 
-.adiciona-encomenda:hover {
+.bto-principal:hover {
     background: rgb(50, 2, 88);
     transform: scale(1.2);
 }
