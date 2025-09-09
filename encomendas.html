@@ -26,12 +26,19 @@
             </nav>
         </div>
     </header>
+
     <!--Título-->
     <ul class="encomendas-titulo">
-        <li class="encomendas-item"></li>
+        <li class="encomendas-item">Registre sua Encomenda!</li>
     </ul>
+
     <!--Conteúdo do site-->
     <section class="Container">
+
+        <!--Campo de Filtro da tabela-->
+        <label for="filtrar-tabela">Buscar:</label>
+        <input type="text" id="filtrar-tabela" class="filtrar-tabela" placeholder="Digite o cliente que deseja buscar">
+
         <!--tabela das Encomendas-->
         <table>
             <thead>
@@ -58,7 +65,7 @@
                     <td class="produto">Picolé (Cx 21 un.)</td>
                     <td class="sabor">Limão</td>
                     <td class="qtde">0</td>
-                    <td class="unitario">2</td>
+                    <td class="unitario"></td>
                     <td class="total"></td>
                 </tr>
                 <tr class="cliente">
@@ -81,6 +88,7 @@
         </table>
     </section>
     <main>
+
         <!--Título-->
         <ul class="contato-titulo">
             <li class="contato-item"></li>
@@ -88,6 +96,7 @@
         <p class="texto-contato">
             Adicionar nova encomenda <br>
         </p>
+
         <!-- Formulário de encomendas -->
         <form id="frmEncomenda" action="adicionaEncomenda">
             <fieldset> <!-- delimitador do formulário -->
@@ -103,7 +112,7 @@
                         <option>Picolé (Caixa 21 un.)</option>
                         <option>Picolé Skimo</option>
                         <option>ituzinho</option>
-                        <option>Sorvete de Massa Pote</option>
+                        <option>Sorvete de Massa (Pote 350 ml)</option>
                         <option>Açaí/Cupuaçu</option>
                     </select>
                 </label>
@@ -126,6 +135,7 @@
             <button id="botaoAdicionar" class="bto-principal">Adicionar Encomenda</button>
         </form>
     </main>
+
     <!--Rodapé-->
     <footer>
         <img src="images/logoMenor.png" title="Picolés & Açaí Dukaká" class="logo_footer" />
@@ -138,8 +148,11 @@
         </p>
         </p>
     </footer>
+
     <script src="javaScript/encomendas.js"></script>
     <script src="javaScript/adiciona_encomenda.js"></script>
+    <script src="javaScript/remover_encomenda.js"></script>
+    <script src="javaScript/buscar_encomenda.js"></script>
 </body>
 
 </html>
