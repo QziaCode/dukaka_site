@@ -44,7 +44,11 @@ header .container {
 }
 
 /*Título*/
-.encomendas-titulo{
+.encomendas-item:before {
+    content: "📦";
+}
+
+.encomendas-titulo {
     position: left;
     bottom: 100px;
     left: 400px;
@@ -53,8 +57,19 @@ header .container {
     color: #380468;
     list-style: none;
 }
-.encomendas-item:before{
-    content: "💌";
+
+/* Campo de Busca */
+#filtrar-tabela{
+    background-color: #efe7f3;
+    color: #000;
+    width: 14%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+/*Esconde a linha ao filtrar busca*/
+.invisivel {
+    display: none;
 }
 
 /* Tabela de Encomendas */
@@ -82,7 +97,7 @@ th {
 td {
     background-color: #bd8ee490;
     color: #340357f1;
-    font-weight:normal
+    font-weight: normal
 }
 
 /* Navegação do Header */
@@ -121,10 +136,6 @@ header nav ul li a:hover {
     font-weight: bold;
     color: #380468;
     list-style: none;
-}
-
-.contato-item:before {
-    content: "💌";
 }
 
 .texto-contato {
@@ -188,7 +199,7 @@ fieldset {
     margin: 10px 10px;
 }
 
-.bto-principal{
+.bto-principal {
     width: 40%;
     padding: 15px 0;
     margin-bottom: 20px;
@@ -214,6 +225,12 @@ fieldset {
 
 .divRetorno p {
     font-size: 24px;
+}
+
+/*Efeito para linha sumir quando excluida*/
+.fadeOut {
+    opacity: 0;
+    transition: 1s;
 }
 
 /*Estilização do Footer*/
@@ -245,7 +262,9 @@ footer i {
     background-color: red;
     color: white;
 }
+
 /*Destaque de informação invalida*/
 .valor-invalida {
-    color: rgb(209, 17, 17);
+    background-color: red;
+    color: white;
 }
